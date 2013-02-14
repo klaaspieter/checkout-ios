@@ -47,7 +47,7 @@ Notice we're importing `STPCheckoutController.h` and the class conforms to `STPC
     {
         NSLog(@"Received token %@", token.tokenId);
 
-        [token postToURL:[NSURL URLWithString:@"https://yourapi.com/tokens"] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+        [token postToURL:[NSURL URLWithString:@"https://yourapi.com/tokens"] withParams:nil completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
             if (error) {
                 // Check error response
             }
