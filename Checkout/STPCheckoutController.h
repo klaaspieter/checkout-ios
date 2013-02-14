@@ -22,8 +22,14 @@
 - (id)initWithKey:(NSString*)key;
 - (void)close;
 
+@property IBOutlet UIBarButtonItem* saveButton;
+@property IBOutlet UIBarButtonItem* cancelButton;
+@property IBOutlet UIBarButtonItem* titleView;
+@property IBOutlet UILabel* titleLabel;
+@property IBOutlet UIToolbar* toolbar;
 @property IBOutlet PKView* paymentView;
 @property (copy) NSString* key;
 @property id <STPCheckoutDelegate> delegate;
+@property (nonatomic, copy) NSString* title;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  MasterViewController.m
+//  ViewController.m
 //  Checkout Example
 //
 //  Created by Alex MacCaw on 2/13/13.
@@ -24,7 +24,8 @@
 {
     STPCheckoutController *checkout = [[STPCheckoutController alloc] initWithKey:STRIPE_API_KEY];
     checkout.delegate = self;
-    [self.navigationController pushViewController:checkout animated:YES];
+    checkout.title = @"Checkout";
+    [self presentViewController:checkout animated:YES completion:nil];
 }
 
 - (void) checkoutController:(STPCheckoutController*)controller hasToken:(STPToken*)token
