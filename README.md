@@ -6,9 +6,9 @@ Checkout is a utility library for writing payment forms in iOS apps.
 
 ### Install with CocoaPods
 
-[CocoaPods](http://cocoapods.org/) is a library dependency management tool for Objective-C. To use the Stripe iOS bindings with CocoaPods, simply add the following to your Podfile and run pod install:
+[CocoaPods](http://cocoapods.org/) is a library dependency management tool for Objective-C. To use Checkout with CocoaPods, simply add the following to your Podfile and run pod install:
 
-    pod 'PaymentKit', :git => 'https://github.com/stripe/PaymentKit.git'
+    pod 'Checkout', :git => 'https://github.com/stripe/checkout-ios.git'
 
 ### Install by adding files to project
 
