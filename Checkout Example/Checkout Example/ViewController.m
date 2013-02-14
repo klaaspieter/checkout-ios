@@ -32,7 +32,7 @@
 {
     NSLog(@"Received token %@", token.tokenId);
     
-    [token postToURL:[NSURL URLWithString:@"https://example.com/tokens"] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+    [token postToURL:[NSURL URLWithString:@"https://example.com"] withParams:nil completionHandler:^(NSURLResponse *response,  NSData *data, NSError *error) {
         if (error) {
             // Check error response
         }
