@@ -35,9 +35,10 @@ Notice we're importing `STPCheckoutController.h` and the class conforms to `STPC
 
     - (void)changeCard
     {
-        STPCheckoutController *checkout = [[STPCheckoutController alloc] initWithKey:STRIPE_API_KEY];
+        STPCheckoutController *checkout = [[STPCheckoutController alloc] initWithKey:@"STRIPE_PUBLISHABLE_KEY"];
         checkout.delegate = self;
-        [self.navigationController pushViewController:checkout animated:YES];
+        checkout.title = @"Checkout";
+        [self presentViewController:checkout animated:YES completion:nil];
     }
 
 **4)** Implement `STPCheckoutDelegate` method `checkoutController:hasToken`. This gets passed a `STPCheckoutController` instance, and a `STPToken` instance containing the Stripe token.

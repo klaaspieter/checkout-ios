@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#define STRIPE_API_KEY @"pk_test_czwzkTp2tactuLOEOqbMTRzG"
+#define STRIPE_PUBLISHABLE_KEY @"pk_test_czwzkTp2tactuLOEOqbMTRzG"
 
 @implementation ViewController
 
@@ -22,7 +22,7 @@
 
 - (void)changeCard
 {
-    STPCheckoutController *checkout = [[STPCheckoutController alloc] initWithKey:STRIPE_API_KEY];
+    STPCheckoutController *checkout = [[STPCheckoutController alloc] initWithKey:STRIPE_PUBLISHABLE_KEY];
     checkout.delegate = self;
     checkout.title = @"Checkout";
     [self presentViewController:checkout animated:YES completion:nil];
