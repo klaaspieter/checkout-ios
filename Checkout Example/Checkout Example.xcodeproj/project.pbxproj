@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAF28CB716CDA31A0098EF9D /* STPCheckoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF28CB616CDA31A0098EF9D /* STPCheckoutView.m */; };
+		FAF28CBB16CDAA270098EF9D /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF28CB916CDAA270098EF9D /* PaymentViewController.m */; };
+		FAF28CBC16CDAA270098EF9D /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF28CBA16CDAA270098EF9D /* PaymentViewController.xib */; };
+		FAF28CC016CDAD540098EF9D /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF28CBE16CDAD540098EF9D /* SettingsViewController.m */; };
+		FAF28CC116CDAD540098EF9D /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF28CBF16CDAD540098EF9D /* SettingsViewController.xib */; };
 		FAF55CF316CC7B6400AA6BE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF55CF216CC7B6400AA6BE6 /* UIKit.framework */; };
 		FAF55CF516CC7B6400AA6BE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF55CF416CC7B6400AA6BE6 /* Foundation.framework */; };
 		FAF55CF716CC7B6400AA6BE6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF55CF616CC7B6400AA6BE6 /* CoreGraphics.framework */; };
@@ -55,6 +60,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FAF28CB516CDA31A0098EF9D /* STPCheckoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCheckoutView.h; sourceTree = "<group>"; };
+		FAF28CB616CDA31A0098EF9D /* STPCheckoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCheckoutView.m; sourceTree = "<group>"; };
+		FAF28CB816CDAA270098EF9D /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		FAF28CB916CDAA270098EF9D /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
+		FAF28CBA16CDAA270098EF9D /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
+		FAF28CBD16CDAD540098EF9D /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		FAF28CBE16CDAD540098EF9D /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		FAF28CBF16CDAD540098EF9D /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		FAF55CEF16CC7B6400AA6BE6 /* Checkout Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Checkout Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF55CF216CC7B6400AA6BE6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAF55CF416CC7B6400AA6BE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -177,6 +190,12 @@
 				FAF55D0B16CC7B6400AA6BE6 /* ViewController.m */,
 				FAF55D1016CC7B6400AA6BE6 /* ViewController.xib */,
 				FAF55CF916CC7B6400AA6BE6 /* Supporting Files */,
+				FAF28CB816CDAA270098EF9D /* PaymentViewController.h */,
+				FAF28CB916CDAA270098EF9D /* PaymentViewController.m */,
+				FAF28CBA16CDAA270098EF9D /* PaymentViewController.xib */,
+				FAF28CBD16CDAD540098EF9D /* SettingsViewController.h */,
+				FAF28CBE16CDAD540098EF9D /* SettingsViewController.m */,
+				FAF28CBF16CDAD540098EF9D /* SettingsViewController.xib */,
 			);
 			path = "Checkout Example";
 			sourceTree = "<group>";
@@ -201,6 +220,8 @@
 				FAF5603216CC885D00AA6BE6 /* STPCheckoutController.h */,
 				FAF5603316CC885D00AA6BE6 /* STPCheckoutController.m */,
 				FAF5603416CC885D00AA6BE6 /* Vendor */,
+				FAF28CB516CDA31A0098EF9D /* STPCheckoutView.h */,
+				FAF28CB616CDA31A0098EF9D /* STPCheckoutView.m */,
 			);
 			name = Checkout;
 			path = ../Checkout;
@@ -375,6 +396,8 @@
 				FAF5608416CC885D00AA6BE6 /* placeholder@2x.png in Resources */,
 				FAF5608516CC885D00AA6BE6 /* visa.png in Resources */,
 				FAF5608616CC885D00AA6BE6 /* visa@2x.png in Resources */,
+				FAF28CBC16CDAA270098EF9D /* PaymentViewController.xib in Resources */,
+				FAF28CC116CDAD540098EF9D /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +426,9 @@
 				FAF5608816CC885D00AA6BE6 /* STPToken.m in Sources */,
 				FAF5608916CC885D00AA6BE6 /* Stripe.m in Sources */,
 				FAF5608A16CC885D00AA6BE6 /* StripeError.m in Sources */,
+				FAF28CB716CDA31A0098EF9D /* STPCheckoutView.m in Sources */,
+				FAF28CBB16CDAA270098EF9D /* PaymentViewController.m in Sources */,
+				FAF28CC016CDAD540098EF9D /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
