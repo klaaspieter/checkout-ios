@@ -65,10 +65,11 @@
 {
     pending = isPending;
     self.userInteractionEnabled = !pending;
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:pending];
 
     if ([self.delegate respondsToSelector:@selector(checkoutView:isPending:)]) {
         [self.delegate checkoutView:self isPending:pending];
+    } else {
+        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:pending];
     }
 }
 
