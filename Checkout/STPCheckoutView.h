@@ -27,6 +27,7 @@
 @property IBOutlet PKView* paymentView;
 @property (copy) NSString* key;
 @property id <STPCheckoutDelegate> delegate;
+@property (readonly) BOOL pending;
 
 - (void) createToken;
 

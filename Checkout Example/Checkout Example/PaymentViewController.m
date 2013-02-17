@@ -66,7 +66,9 @@
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
-    [token postToURL:[NSURL URLWithString:@"https://example.com"] withParams:nil completionHandler:^(NSURLResponse *response,  NSData *data, NSError *error) {
+    [token postToURL:[NSURL URLWithString:@"https://example.com"]
+          withParams:nil
+   completionHandler:^(NSURLResponse *response,  NSData *data, NSError *error) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
 
         if (error) {

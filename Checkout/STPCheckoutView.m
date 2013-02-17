@@ -10,7 +10,7 @@
 
 @implementation STPCheckoutView
 
-@synthesize paymentView, key;
+@synthesize paymentView, key, pending;
 
 - (id)initWithFrame: (CGRect)frame andKey: (NSString*)stripeKey
 {
@@ -51,12 +51,22 @@
 {
     if ([self.delegate respondsToSelector:@selector(checkoutView:hasError:)]) {
         [self.delegate checkoutView:self hasError:error];
+    } else {
+        UIAlertView *message = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error")
+                                                          message:[error localizedDescription]
+                                                         delegate:nil
+                                                cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
+                                                otherButtonTitles:nil];
+        [message show];
     }
 }
 
-- (void)pendingHandler:(BOOL)pending
+- (void)pendingHandler:(BOOL)isPending
 {
+    pending = isPending;
     self.userInteractionEnabled = !pending;
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:pending];
+
     if ([self.delegate respondsToSelector:@selector(checkoutView:isPending:)]) {
         [self.delegate checkoutView:self isPending:pending];
     }
@@ -65,6 +75,7 @@
 - (void)createToken
 {
     if ( ![self.paymentView isValid] ) return;
+    if ( pending ) return;
  
     PKCard* card = self.paymentView.card;
     STPCard* scard = [[STPCard alloc] init];
@@ -78,6 +89,7 @@
     
     [Stripe createTokenWithCard:scard
                  publishableKey:self.key success:^(STPToken *token) {
+                     [self pendingHandler:NO];
                      [self successHandler:token];
                  } error:^(NSError *error) {
                      [self pendingHandler:NO];
