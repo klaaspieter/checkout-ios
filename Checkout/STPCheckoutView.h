@@ -28,6 +28,7 @@
 @property (copy) NSString* key;
 @property id <STPCheckoutDelegate> delegate;
 @property (readonly) BOOL pending;
+@property (setter = setUSAddress:) BOOL usAddress;
 
 - (void) createToken;
 

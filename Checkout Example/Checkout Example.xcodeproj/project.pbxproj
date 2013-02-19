@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FADDF3E716D3FC8B003BA76F /* PKAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDF3BF16D3FC8B003BA76F /* PKAddressZip.m */; };
+		FADDF3E816D3FC8B003BA76F /* PKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDF3C116D3FC8B003BA76F /* PKCard.m */; };
+		FADDF3E916D3FC8B003BA76F /* PKCardCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDF3C316D3FC8B003BA76F /* PKCardCVC.m */; };
+		FADDF3EA16D3FC8B003BA76F /* PKCardCVCDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDF3C516D3FC8B003BA76F /* PKCardCVCDelegate.m */; };
+		FADDF3EB16D3FC8B003BA76F /* PKCardExpiry.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDF3C716D3FC8B003BA76F /* PKCardExpiry.m */; };
+		FADDF3EC16D3FC8B003BA76F /* PKCardExpiryDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDF3C916D3FC8B003BA76F /* PKCardExpiryDelegate.m */; };
+		FADDF3ED16D3FC8B003BA76F /* PKCardNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDF3CB16D3FC8B003BA76F /* PKCardNumber.m */; };
+		FADDF3EE16D3FC8B003BA76F /* PKCardNumberDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDF3CD16D3FC8B003BA76F /* PKCardNumberDelegate.m */; };
+		FADDF3EF16D3FC8B003BA76F /* PKUSAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDF3D016D3FC8B003BA76F /* PKUSAddressZip.m */; };
+		FADDF3F016D3FC8B003BA76F /* PKView.m in Sources */ = {isa = PBXBuildFile; fileRef = FADDF3D216D3FC8B003BA76F /* PKView.m */; };
+		FADDF3F116D3FC8B003BA76F /* amex.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3D516D3FC8B003BA76F /* amex.png */; };
+		FADDF3F216D3FC8B003BA76F /* amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3D616D3FC8B003BA76F /* amex@2x.png */; };
+		FADDF3F316D3FC8B003BA76F /* cvc-amex.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3D716D3FC8B003BA76F /* cvc-amex.png */; };
+		FADDF3F416D3FC8B003BA76F /* cvc-amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3D816D3FC8B003BA76F /* cvc-amex@2x.png */; };
+		FADDF3F516D3FC8B003BA76F /* cvc.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3D916D3FC8B003BA76F /* cvc.png */; };
+		FADDF3F616D3FC8B003BA76F /* cvc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3DA16D3FC8B003BA76F /* cvc@2x.png */; };
+		FADDF3F716D3FC8B003BA76F /* diners.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3DB16D3FC8B003BA76F /* diners.png */; };
+		FADDF3F816D3FC8B003BA76F /* diners@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3DC16D3FC8B003BA76F /* diners@2x.png */; };
+		FADDF3F916D3FC8B003BA76F /* discover.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3DD16D3FC8B003BA76F /* discover.png */; };
+		FADDF3FA16D3FC8B003BA76F /* discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3DE16D3FC8B003BA76F /* discover@2x.png */; };
+		FADDF3FB16D3FC8B003BA76F /* jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3DF16D3FC8B003BA76F /* jcb.png */; };
+		FADDF3FC16D3FC8B003BA76F /* jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3E016D3FC8B003BA76F /* jcb@2x.png */; };
+		FADDF3FD16D3FC8B003BA76F /* mastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3E116D3FC8B003BA76F /* mastercard.png */; };
+		FADDF3FE16D3FC8B003BA76F /* mastercard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3E216D3FC8B003BA76F /* mastercard@2x.png */; };
+		FADDF3FF16D3FC8B003BA76F /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3E316D3FC8B003BA76F /* placeholder.png */; };
+		FADDF40016D3FC8B003BA76F /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3E416D3FC8B003BA76F /* placeholder@2x.png */; };
+		FADDF40116D3FC8B003BA76F /* visa.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3E516D3FC8B003BA76F /* visa.png */; };
+		FADDF40216D3FC8B003BA76F /* visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FADDF3E616D3FC8B003BA76F /* visa@2x.png */; };
 		FAF28CB716CDA31A0098EF9D /* STPCheckoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF28CB616CDA31A0098EF9D /* STPCheckoutView.m */; };
 		FAF28CBB16CDAA270098EF9D /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF28CB916CDAA270098EF9D /* PaymentViewController.m */; };
 		FAF28CBC16CDAA270098EF9D /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF28CBA16CDAA270098EF9D /* PaymentViewController.xib */; };
@@ -26,33 +54,6 @@
 		FAF55F5416CC828A00AA6BE6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF55F5316CC828A00AA6BE6 /* QuartzCore.framework */; };
 		FAF5606A16CC885D00AA6BE6 /* STPCheckoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5603316CC885D00AA6BE6 /* STPCheckoutController.m */; };
 		FAF5606B16CC885D00AA6BE6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5603716CC885D00AA6BE6 /* MBProgressHUD.m */; };
-		FAF5606C16CC885D00AA6BE6 /* PKAddressZip.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5603A16CC885D00AA6BE6 /* PKAddressZip.m */; };
-		FAF5606D16CC885D00AA6BE6 /* PKCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5603C16CC885D00AA6BE6 /* PKCard.m */; };
-		FAF5606E16CC885D00AA6BE6 /* PKCardCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5603E16CC885D00AA6BE6 /* PKCardCVC.m */; };
-		FAF5606F16CC885D00AA6BE6 /* PKCardCVCDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5604016CC885D00AA6BE6 /* PKCardCVCDelegate.m */; };
-		FAF5607016CC885D00AA6BE6 /* PKCardExpiry.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5604216CC885D00AA6BE6 /* PKCardExpiry.m */; };
-		FAF5607116CC885D00AA6BE6 /* PKCardExpiryDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5604416CC885D00AA6BE6 /* PKCardExpiryDelegate.m */; };
-		FAF5607216CC885D00AA6BE6 /* PKCardNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5604616CC885D00AA6BE6 /* PKCardNumber.m */; };
-		FAF5607316CC885D00AA6BE6 /* PKCardNumberDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5604816CC885D00AA6BE6 /* PKCardNumberDelegate.m */; };
-		FAF5607416CC885D00AA6BE6 /* PKView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5604B16CC885D00AA6BE6 /* PKView.m */; };
-		FAF5607516CC885D00AA6BE6 /* amex.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5604E16CC885D00AA6BE6 /* amex.png */; };
-		FAF5607616CC885D00AA6BE6 /* amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5604F16CC885D00AA6BE6 /* amex@2x.png */; };
-		FAF5607716CC885D00AA6BE6 /* cvc-amex.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605016CC885D00AA6BE6 /* cvc-amex.png */; };
-		FAF5607816CC885D00AA6BE6 /* cvc-amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605116CC885D00AA6BE6 /* cvc-amex@2x.png */; };
-		FAF5607916CC885D00AA6BE6 /* cvc.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605216CC885D00AA6BE6 /* cvc.png */; };
-		FAF5607A16CC885D00AA6BE6 /* cvc@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605316CC885D00AA6BE6 /* cvc@2x.png */; };
-		FAF5607B16CC885D00AA6BE6 /* diners.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605416CC885D00AA6BE6 /* diners.png */; };
-		FAF5607C16CC885D00AA6BE6 /* diners@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605516CC885D00AA6BE6 /* diners@2x.png */; };
-		FAF5607D16CC885D00AA6BE6 /* discover.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605616CC885D00AA6BE6 /* discover.png */; };
-		FAF5607E16CC885D00AA6BE6 /* discover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605716CC885D00AA6BE6 /* discover@2x.png */; };
-		FAF5607F16CC885D00AA6BE6 /* jcb.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605816CC885D00AA6BE6 /* jcb.png */; };
-		FAF5608016CC885D00AA6BE6 /* jcb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605916CC885D00AA6BE6 /* jcb@2x.png */; };
-		FAF5608116CC885D00AA6BE6 /* mastercard.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605A16CC885D00AA6BE6 /* mastercard.png */; };
-		FAF5608216CC885D00AA6BE6 /* mastercard@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605B16CC885D00AA6BE6 /* mastercard@2x.png */; };
-		FAF5608316CC885D00AA6BE6 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605C16CC885D00AA6BE6 /* placeholder.png */; };
-		FAF5608416CC885D00AA6BE6 /* placeholder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605D16CC885D00AA6BE6 /* placeholder@2x.png */; };
-		FAF5608516CC885D00AA6BE6 /* visa.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605E16CC885D00AA6BE6 /* visa.png */; };
-		FAF5608616CC885D00AA6BE6 /* visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF5605F16CC885D00AA6BE6 /* visa@2x.png */; };
 		FAF5608716CC885D00AA6BE6 /* STPCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5606216CC885D00AA6BE6 /* STPCard.m */; };
 		FAF5608816CC885D00AA6BE6 /* STPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5606416CC885D00AA6BE6 /* STPToken.m */; };
 		FAF5608916CC885D00AA6BE6 /* Stripe.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5606716CC885D00AA6BE6 /* Stripe.m */; };
@@ -60,6 +61,45 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FADDF3BE16D3FC8B003BA76F /* PKAddressZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAddressZip.h; sourceTree = "<group>"; };
+		FADDF3BF16D3FC8B003BA76F /* PKAddressZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKAddressZip.m; sourceTree = "<group>"; };
+		FADDF3C016D3FC8B003BA76F /* PKCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCard.h; sourceTree = "<group>"; };
+		FADDF3C116D3FC8B003BA76F /* PKCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCard.m; sourceTree = "<group>"; };
+		FADDF3C216D3FC8B003BA76F /* PKCardCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardCVC.h; sourceTree = "<group>"; };
+		FADDF3C316D3FC8B003BA76F /* PKCardCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardCVC.m; sourceTree = "<group>"; };
+		FADDF3C416D3FC8B003BA76F /* PKCardCVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardCVCDelegate.h; sourceTree = "<group>"; };
+		FADDF3C516D3FC8B003BA76F /* PKCardCVCDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardCVCDelegate.m; sourceTree = "<group>"; };
+		FADDF3C616D3FC8B003BA76F /* PKCardExpiry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardExpiry.h; sourceTree = "<group>"; };
+		FADDF3C716D3FC8B003BA76F /* PKCardExpiry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardExpiry.m; sourceTree = "<group>"; };
+		FADDF3C816D3FC8B003BA76F /* PKCardExpiryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardExpiryDelegate.h; sourceTree = "<group>"; };
+		FADDF3C916D3FC8B003BA76F /* PKCardExpiryDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardExpiryDelegate.m; sourceTree = "<group>"; };
+		FADDF3CA16D3FC8B003BA76F /* PKCardNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardNumber.h; sourceTree = "<group>"; };
+		FADDF3CB16D3FC8B003BA76F /* PKCardNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardNumber.m; sourceTree = "<group>"; };
+		FADDF3CC16D3FC8B003BA76F /* PKCardNumberDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardNumberDelegate.h; sourceTree = "<group>"; };
+		FADDF3CD16D3FC8B003BA76F /* PKCardNumberDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardNumberDelegate.m; sourceTree = "<group>"; };
+		FADDF3CE16D3FC8B003BA76F /* PKCardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardType.h; sourceTree = "<group>"; };
+		FADDF3CF16D3FC8B003BA76F /* PKUSAddressZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKUSAddressZip.h; sourceTree = "<group>"; };
+		FADDF3D016D3FC8B003BA76F /* PKUSAddressZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKUSAddressZip.m; sourceTree = "<group>"; };
+		FADDF3D116D3FC8B003BA76F /* PKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKView.h; sourceTree = "<group>"; };
+		FADDF3D216D3FC8B003BA76F /* PKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKView.m; sourceTree = "<group>"; };
+		FADDF3D516D3FC8B003BA76F /* amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amex.png; sourceTree = "<group>"; };
+		FADDF3D616D3FC8B003BA76F /* amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amex@2x.png"; sourceTree = "<group>"; };
+		FADDF3D716D3FC8B003BA76F /* cvc-amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cvc-amex.png"; sourceTree = "<group>"; };
+		FADDF3D816D3FC8B003BA76F /* cvc-amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cvc-amex@2x.png"; sourceTree = "<group>"; };
+		FADDF3D916D3FC8B003BA76F /* cvc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cvc.png; sourceTree = "<group>"; };
+		FADDF3DA16D3FC8B003BA76F /* cvc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cvc@2x.png"; sourceTree = "<group>"; };
+		FADDF3DB16D3FC8B003BA76F /* diners.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diners.png; sourceTree = "<group>"; };
+		FADDF3DC16D3FC8B003BA76F /* diners@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diners@2x.png"; sourceTree = "<group>"; };
+		FADDF3DD16D3FC8B003BA76F /* discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discover.png; sourceTree = "<group>"; };
+		FADDF3DE16D3FC8B003BA76F /* discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discover@2x.png"; sourceTree = "<group>"; };
+		FADDF3DF16D3FC8B003BA76F /* jcb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jcb.png; sourceTree = "<group>"; };
+		FADDF3E016D3FC8B003BA76F /* jcb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jcb@2x.png"; sourceTree = "<group>"; };
+		FADDF3E116D3FC8B003BA76F /* mastercard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mastercard.png; sourceTree = "<group>"; };
+		FADDF3E216D3FC8B003BA76F /* mastercard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mastercard@2x.png"; sourceTree = "<group>"; };
+		FADDF3E316D3FC8B003BA76F /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		FADDF3E416D3FC8B003BA76F /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
+		FADDF3E516D3FC8B003BA76F /* visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visa.png; sourceTree = "<group>"; };
+		FADDF3E616D3FC8B003BA76F /* visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "visa@2x.png"; sourceTree = "<group>"; };
 		FAF28CB516CDA31A0098EF9D /* STPCheckoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCheckoutView.h; sourceTree = "<group>"; };
 		FAF28CB616CDA31A0098EF9D /* STPCheckoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCheckoutView.m; sourceTree = "<group>"; };
 		FAF28CB816CDAA270098EF9D /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
@@ -89,43 +129,6 @@
 		FAF5603316CC885D00AA6BE6 /* STPCheckoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCheckoutController.m; sourceTree = "<group>"; };
 		FAF5603616CC885D00AA6BE6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		FAF5603716CC885D00AA6BE6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		FAF5603916CC885D00AA6BE6 /* PKAddressZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKAddressZip.h; sourceTree = "<group>"; };
-		FAF5603A16CC885D00AA6BE6 /* PKAddressZip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKAddressZip.m; sourceTree = "<group>"; };
-		FAF5603B16CC885D00AA6BE6 /* PKCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCard.h; sourceTree = "<group>"; };
-		FAF5603C16CC885D00AA6BE6 /* PKCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCard.m; sourceTree = "<group>"; };
-		FAF5603D16CC885D00AA6BE6 /* PKCardCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardCVC.h; sourceTree = "<group>"; };
-		FAF5603E16CC885D00AA6BE6 /* PKCardCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardCVC.m; sourceTree = "<group>"; };
-		FAF5603F16CC885D00AA6BE6 /* PKCardCVCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardCVCDelegate.h; sourceTree = "<group>"; };
-		FAF5604016CC885D00AA6BE6 /* PKCardCVCDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardCVCDelegate.m; sourceTree = "<group>"; };
-		FAF5604116CC885D00AA6BE6 /* PKCardExpiry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardExpiry.h; sourceTree = "<group>"; };
-		FAF5604216CC885D00AA6BE6 /* PKCardExpiry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardExpiry.m; sourceTree = "<group>"; };
-		FAF5604316CC885D00AA6BE6 /* PKCardExpiryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardExpiryDelegate.h; sourceTree = "<group>"; };
-		FAF5604416CC885D00AA6BE6 /* PKCardExpiryDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardExpiryDelegate.m; sourceTree = "<group>"; };
-		FAF5604516CC885D00AA6BE6 /* PKCardNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardNumber.h; sourceTree = "<group>"; };
-		FAF5604616CC885D00AA6BE6 /* PKCardNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardNumber.m; sourceTree = "<group>"; };
-		FAF5604716CC885D00AA6BE6 /* PKCardNumberDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardNumberDelegate.h; sourceTree = "<group>"; };
-		FAF5604816CC885D00AA6BE6 /* PKCardNumberDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKCardNumberDelegate.m; sourceTree = "<group>"; };
-		FAF5604916CC885D00AA6BE6 /* PKCardType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKCardType.h; sourceTree = "<group>"; };
-		FAF5604A16CC885D00AA6BE6 /* PKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKView.h; sourceTree = "<group>"; };
-		FAF5604B16CC885D00AA6BE6 /* PKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKView.m; sourceTree = "<group>"; };
-		FAF5604E16CC885D00AA6BE6 /* amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amex.png; sourceTree = "<group>"; };
-		FAF5604F16CC885D00AA6BE6 /* amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amex@2x.png"; sourceTree = "<group>"; };
-		FAF5605016CC885D00AA6BE6 /* cvc-amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cvc-amex.png"; sourceTree = "<group>"; };
-		FAF5605116CC885D00AA6BE6 /* cvc-amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cvc-amex@2x.png"; sourceTree = "<group>"; };
-		FAF5605216CC885D00AA6BE6 /* cvc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cvc.png; sourceTree = "<group>"; };
-		FAF5605316CC885D00AA6BE6 /* cvc@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cvc@2x.png"; sourceTree = "<group>"; };
-		FAF5605416CC885D00AA6BE6 /* diners.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diners.png; sourceTree = "<group>"; };
-		FAF5605516CC885D00AA6BE6 /* diners@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diners@2x.png"; sourceTree = "<group>"; };
-		FAF5605616CC885D00AA6BE6 /* discover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = discover.png; sourceTree = "<group>"; };
-		FAF5605716CC885D00AA6BE6 /* discover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "discover@2x.png"; sourceTree = "<group>"; };
-		FAF5605816CC885D00AA6BE6 /* jcb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jcb.png; sourceTree = "<group>"; };
-		FAF5605916CC885D00AA6BE6 /* jcb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jcb@2x.png"; sourceTree = "<group>"; };
-		FAF5605A16CC885D00AA6BE6 /* mastercard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mastercard.png; sourceTree = "<group>"; };
-		FAF5605B16CC885D00AA6BE6 /* mastercard@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mastercard@2x.png"; sourceTree = "<group>"; };
-		FAF5605C16CC885D00AA6BE6 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
-		FAF5605D16CC885D00AA6BE6 /* placeholder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "placeholder@2x.png"; sourceTree = "<group>"; };
-		FAF5605E16CC885D00AA6BE6 /* visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visa.png; sourceTree = "<group>"; };
-		FAF5605F16CC885D00AA6BE6 /* visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "visa@2x.png"; sourceTree = "<group>"; };
 		FAF5606116CC885D00AA6BE6 /* STPCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCard.h; sourceTree = "<group>"; };
 		FAF5606216CC885D00AA6BE6 /* STPCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCard.m; sourceTree = "<group>"; };
 		FAF5606316CC885D00AA6BE6 /* STPToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPToken.h; sourceTree = "<group>"; };
@@ -152,6 +155,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FADDF3BD16D3FC8B003BA76F /* PaymentKit */ = {
+			isa = PBXGroup;
+			children = (
+				FADDF3BE16D3FC8B003BA76F /* PKAddressZip.h */,
+				FADDF3BF16D3FC8B003BA76F /* PKAddressZip.m */,
+				FADDF3C016D3FC8B003BA76F /* PKCard.h */,
+				FADDF3C116D3FC8B003BA76F /* PKCard.m */,
+				FADDF3C216D3FC8B003BA76F /* PKCardCVC.h */,
+				FADDF3C316D3FC8B003BA76F /* PKCardCVC.m */,
+				FADDF3C416D3FC8B003BA76F /* PKCardCVCDelegate.h */,
+				FADDF3C516D3FC8B003BA76F /* PKCardCVCDelegate.m */,
+				FADDF3C616D3FC8B003BA76F /* PKCardExpiry.h */,
+				FADDF3C716D3FC8B003BA76F /* PKCardExpiry.m */,
+				FADDF3C816D3FC8B003BA76F /* PKCardExpiryDelegate.h */,
+				FADDF3C916D3FC8B003BA76F /* PKCardExpiryDelegate.m */,
+				FADDF3CA16D3FC8B003BA76F /* PKCardNumber.h */,
+				FADDF3CB16D3FC8B003BA76F /* PKCardNumber.m */,
+				FADDF3CC16D3FC8B003BA76F /* PKCardNumberDelegate.h */,
+				FADDF3CD16D3FC8B003BA76F /* PKCardNumberDelegate.m */,
+				FADDF3CE16D3FC8B003BA76F /* PKCardType.h */,
+				FADDF3CF16D3FC8B003BA76F /* PKUSAddressZip.h */,
+				FADDF3D016D3FC8B003BA76F /* PKUSAddressZip.m */,
+				FADDF3D116D3FC8B003BA76F /* PKView.h */,
+				FADDF3D216D3FC8B003BA76F /* PKView.m */,
+				FADDF3D316D3FC8B003BA76F /* Resources */,
+			);
+			path = PaymentKit;
+			sourceTree = "<group>";
+		};
+		FADDF3D316D3FC8B003BA76F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FADDF3D416D3FC8B003BA76F /* Cards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FADDF3D416D3FC8B003BA76F /* Cards */ = {
+			isa = PBXGroup;
+			children = (
+				FADDF3D516D3FC8B003BA76F /* amex.png */,
+				FADDF3D616D3FC8B003BA76F /* amex@2x.png */,
+				FADDF3D716D3FC8B003BA76F /* cvc-amex.png */,
+				FADDF3D816D3FC8B003BA76F /* cvc-amex@2x.png */,
+				FADDF3D916D3FC8B003BA76F /* cvc.png */,
+				FADDF3DA16D3FC8B003BA76F /* cvc@2x.png */,
+				FADDF3DB16D3FC8B003BA76F /* diners.png */,
+				FADDF3DC16D3FC8B003BA76F /* diners@2x.png */,
+				FADDF3DD16D3FC8B003BA76F /* discover.png */,
+				FADDF3DE16D3FC8B003BA76F /* discover@2x.png */,
+				FADDF3DF16D3FC8B003BA76F /* jcb.png */,
+				FADDF3E016D3FC8B003BA76F /* jcb@2x.png */,
+				FADDF3E116D3FC8B003BA76F /* mastercard.png */,
+				FADDF3E216D3FC8B003BA76F /* mastercard@2x.png */,
+				FADDF3E316D3FC8B003BA76F /* placeholder.png */,
+				FADDF3E416D3FC8B003BA76F /* placeholder@2x.png */,
+				FADDF3E516D3FC8B003BA76F /* visa.png */,
+				FADDF3E616D3FC8B003BA76F /* visa@2x.png */,
+			);
+			path = Cards;
+			sourceTree = "<group>";
+		};
 		FAF55CE616CC7B6400AA6BE6 = {
 			isa = PBXGroup;
 			children = (
@@ -230,8 +295,8 @@
 		FAF5603416CC885D00AA6BE6 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				FADDF3BD16D3FC8B003BA76F /* PaymentKit */,
 				FAF5603516CC885D00AA6BE6 /* MBProgressHUD */,
-				FAF5603816CC885D00AA6BE6 /* PaymentKit */,
 				FAF5606016CC885D00AA6BE6 /* Stripe */,
 			);
 			path = Vendor;
@@ -244,66 +309,6 @@
 				FAF5603716CC885D00AA6BE6 /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		FAF5603816CC885D00AA6BE6 /* PaymentKit */ = {
-			isa = PBXGroup;
-			children = (
-				FAF5603916CC885D00AA6BE6 /* PKAddressZip.h */,
-				FAF5603A16CC885D00AA6BE6 /* PKAddressZip.m */,
-				FAF5603B16CC885D00AA6BE6 /* PKCard.h */,
-				FAF5603C16CC885D00AA6BE6 /* PKCard.m */,
-				FAF5603D16CC885D00AA6BE6 /* PKCardCVC.h */,
-				FAF5603E16CC885D00AA6BE6 /* PKCardCVC.m */,
-				FAF5603F16CC885D00AA6BE6 /* PKCardCVCDelegate.h */,
-				FAF5604016CC885D00AA6BE6 /* PKCardCVCDelegate.m */,
-				FAF5604116CC885D00AA6BE6 /* PKCardExpiry.h */,
-				FAF5604216CC885D00AA6BE6 /* PKCardExpiry.m */,
-				FAF5604316CC885D00AA6BE6 /* PKCardExpiryDelegate.h */,
-				FAF5604416CC885D00AA6BE6 /* PKCardExpiryDelegate.m */,
-				FAF5604516CC885D00AA6BE6 /* PKCardNumber.h */,
-				FAF5604616CC885D00AA6BE6 /* PKCardNumber.m */,
-				FAF5604716CC885D00AA6BE6 /* PKCardNumberDelegate.h */,
-				FAF5604816CC885D00AA6BE6 /* PKCardNumberDelegate.m */,
-				FAF5604916CC885D00AA6BE6 /* PKCardType.h */,
-				FAF5604A16CC885D00AA6BE6 /* PKView.h */,
-				FAF5604B16CC885D00AA6BE6 /* PKView.m */,
-				FAF5604C16CC885D00AA6BE6 /* Resources */,
-			);
-			path = PaymentKit;
-			sourceTree = "<group>";
-		};
-		FAF5604C16CC885D00AA6BE6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FAF5604D16CC885D00AA6BE6 /* Cards */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		FAF5604D16CC885D00AA6BE6 /* Cards */ = {
-			isa = PBXGroup;
-			children = (
-				FAF5604E16CC885D00AA6BE6 /* amex.png */,
-				FAF5604F16CC885D00AA6BE6 /* amex@2x.png */,
-				FAF5605016CC885D00AA6BE6 /* cvc-amex.png */,
-				FAF5605116CC885D00AA6BE6 /* cvc-amex@2x.png */,
-				FAF5605216CC885D00AA6BE6 /* cvc.png */,
-				FAF5605316CC885D00AA6BE6 /* cvc@2x.png */,
-				FAF5605416CC885D00AA6BE6 /* diners.png */,
-				FAF5605516CC885D00AA6BE6 /* diners@2x.png */,
-				FAF5605616CC885D00AA6BE6 /* discover.png */,
-				FAF5605716CC885D00AA6BE6 /* discover@2x.png */,
-				FAF5605816CC885D00AA6BE6 /* jcb.png */,
-				FAF5605916CC885D00AA6BE6 /* jcb@2x.png */,
-				FAF5605A16CC885D00AA6BE6 /* mastercard.png */,
-				FAF5605B16CC885D00AA6BE6 /* mastercard@2x.png */,
-				FAF5605C16CC885D00AA6BE6 /* placeholder.png */,
-				FAF5605D16CC885D00AA6BE6 /* placeholder@2x.png */,
-				FAF5605E16CC885D00AA6BE6 /* visa.png */,
-				FAF5605F16CC885D00AA6BE6 /* visa@2x.png */,
-			);
-			path = Cards;
 			sourceTree = "<group>";
 		};
 		FAF5606016CC885D00AA6BE6 /* Stripe */ = {
@@ -378,26 +383,26 @@
 				FAF55D0716CC7B6400AA6BE6 /* Default@2x.png in Resources */,
 				FAF55D0916CC7B6400AA6BE6 /* Default-568h@2x.png in Resources */,
 				FAF55D1216CC7B6400AA6BE6 /* ViewController.xib in Resources */,
-				FAF5607516CC885D00AA6BE6 /* amex.png in Resources */,
-				FAF5607616CC885D00AA6BE6 /* amex@2x.png in Resources */,
-				FAF5607716CC885D00AA6BE6 /* cvc-amex.png in Resources */,
-				FAF5607816CC885D00AA6BE6 /* cvc-amex@2x.png in Resources */,
-				FAF5607916CC885D00AA6BE6 /* cvc.png in Resources */,
-				FAF5607A16CC885D00AA6BE6 /* cvc@2x.png in Resources */,
-				FAF5607B16CC885D00AA6BE6 /* diners.png in Resources */,
-				FAF5607C16CC885D00AA6BE6 /* diners@2x.png in Resources */,
-				FAF5607D16CC885D00AA6BE6 /* discover.png in Resources */,
-				FAF5607E16CC885D00AA6BE6 /* discover@2x.png in Resources */,
-				FAF5607F16CC885D00AA6BE6 /* jcb.png in Resources */,
-				FAF5608016CC885D00AA6BE6 /* jcb@2x.png in Resources */,
-				FAF5608116CC885D00AA6BE6 /* mastercard.png in Resources */,
-				FAF5608216CC885D00AA6BE6 /* mastercard@2x.png in Resources */,
-				FAF5608316CC885D00AA6BE6 /* placeholder.png in Resources */,
-				FAF5608416CC885D00AA6BE6 /* placeholder@2x.png in Resources */,
-				FAF5608516CC885D00AA6BE6 /* visa.png in Resources */,
-				FAF5608616CC885D00AA6BE6 /* visa@2x.png in Resources */,
 				FAF28CBC16CDAA270098EF9D /* PaymentViewController.xib in Resources */,
 				FAF28CC116CDAD540098EF9D /* SettingsViewController.xib in Resources */,
+				FADDF3F116D3FC8B003BA76F /* amex.png in Resources */,
+				FADDF3F216D3FC8B003BA76F /* amex@2x.png in Resources */,
+				FADDF3F316D3FC8B003BA76F /* cvc-amex.png in Resources */,
+				FADDF3F416D3FC8B003BA76F /* cvc-amex@2x.png in Resources */,
+				FADDF3F516D3FC8B003BA76F /* cvc.png in Resources */,
+				FADDF3F616D3FC8B003BA76F /* cvc@2x.png in Resources */,
+				FADDF3F716D3FC8B003BA76F /* diners.png in Resources */,
+				FADDF3F816D3FC8B003BA76F /* diners@2x.png in Resources */,
+				FADDF3F916D3FC8B003BA76F /* discover.png in Resources */,
+				FADDF3FA16D3FC8B003BA76F /* discover@2x.png in Resources */,
+				FADDF3FB16D3FC8B003BA76F /* jcb.png in Resources */,
+				FADDF3FC16D3FC8B003BA76F /* jcb@2x.png in Resources */,
+				FADDF3FD16D3FC8B003BA76F /* mastercard.png in Resources */,
+				FADDF3FE16D3FC8B003BA76F /* mastercard@2x.png in Resources */,
+				FADDF3FF16D3FC8B003BA76F /* placeholder.png in Resources */,
+				FADDF40016D3FC8B003BA76F /* placeholder@2x.png in Resources */,
+				FADDF40116D3FC8B003BA76F /* visa.png in Resources */,
+				FADDF40216D3FC8B003BA76F /* visa@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,15 +418,6 @@
 				FAF55D0C16CC7B6400AA6BE6 /* ViewController.m in Sources */,
 				FAF5606A16CC885D00AA6BE6 /* STPCheckoutController.m in Sources */,
 				FAF5606B16CC885D00AA6BE6 /* MBProgressHUD.m in Sources */,
-				FAF5606C16CC885D00AA6BE6 /* PKAddressZip.m in Sources */,
-				FAF5606D16CC885D00AA6BE6 /* PKCard.m in Sources */,
-				FAF5606E16CC885D00AA6BE6 /* PKCardCVC.m in Sources */,
-				FAF5606F16CC885D00AA6BE6 /* PKCardCVCDelegate.m in Sources */,
-				FAF5607016CC885D00AA6BE6 /* PKCardExpiry.m in Sources */,
-				FAF5607116CC885D00AA6BE6 /* PKCardExpiryDelegate.m in Sources */,
-				FAF5607216CC885D00AA6BE6 /* PKCardNumber.m in Sources */,
-				FAF5607316CC885D00AA6BE6 /* PKCardNumberDelegate.m in Sources */,
-				FAF5607416CC885D00AA6BE6 /* PKView.m in Sources */,
 				FAF5608716CC885D00AA6BE6 /* STPCard.m in Sources */,
 				FAF5608816CC885D00AA6BE6 /* STPToken.m in Sources */,
 				FAF5608916CC885D00AA6BE6 /* Stripe.m in Sources */,
@@ -429,6 +425,16 @@
 				FAF28CB716CDA31A0098EF9D /* STPCheckoutView.m in Sources */,
 				FAF28CBB16CDAA270098EF9D /* PaymentViewController.m in Sources */,
 				FAF28CC016CDAD540098EF9D /* SettingsViewController.m in Sources */,
+				FADDF3E716D3FC8B003BA76F /* PKAddressZip.m in Sources */,
+				FADDF3E816D3FC8B003BA76F /* PKCard.m in Sources */,
+				FADDF3E916D3FC8B003BA76F /* PKCardCVC.m in Sources */,
+				FADDF3EA16D3FC8B003BA76F /* PKCardCVCDelegate.m in Sources */,
+				FADDF3EB16D3FC8B003BA76F /* PKCardExpiry.m in Sources */,
+				FADDF3EC16D3FC8B003BA76F /* PKCardExpiryDelegate.m in Sources */,
+				FADDF3ED16D3FC8B003BA76F /* PKCardNumber.m in Sources */,
+				FADDF3EE16D3FC8B003BA76F /* PKCardNumberDelegate.m in Sources */,
+				FADDF3EF16D3FC8B003BA76F /* PKUSAddressZip.m in Sources */,
+				FADDF3F016D3FC8B003BA76F /* PKView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
