@@ -49,10 +49,7 @@
 		FAF55D0516CC7B6400AA6BE6 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF55D0416CC7B6400AA6BE6 /* Default.png */; };
 		FAF55D0716CC7B6400AA6BE6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF55D0616CC7B6400AA6BE6 /* Default@2x.png */; };
 		FAF55D0916CC7B6400AA6BE6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF55D0816CC7B6400AA6BE6 /* Default-568h@2x.png */; };
-		FAF55D0C16CC7B6400AA6BE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF55D0B16CC7B6400AA6BE6 /* ViewController.m */; };
-		FAF55D1216CC7B6400AA6BE6 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF55D1016CC7B6400AA6BE6 /* ViewController.xib */; };
 		FAF55F5416CC828A00AA6BE6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF55F5316CC828A00AA6BE6 /* QuartzCore.framework */; };
-		FAF5606A16CC885D00AA6BE6 /* STPCheckoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5603316CC885D00AA6BE6 /* STPCheckoutController.m */; };
 		FAF5606B16CC885D00AA6BE6 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5603716CC885D00AA6BE6 /* MBProgressHUD.m */; };
 		FAF5608716CC885D00AA6BE6 /* STPCard.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5606216CC885D00AA6BE6 /* STPCard.m */; };
 		FAF5608816CC885D00AA6BE6 /* STPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF5606416CC885D00AA6BE6 /* STPToken.m */; };
@@ -121,12 +118,7 @@
 		FAF55D0416CC7B6400AA6BE6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FAF55D0616CC7B6400AA6BE6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FAF55D0816CC7B6400AA6BE6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		FAF55D0A16CC7B6400AA6BE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FAF55D0B16CC7B6400AA6BE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FAF55D1116CC7B6400AA6BE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		FAF55F5316CC828A00AA6BE6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		FAF5603216CC885D00AA6BE6 /* STPCheckoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCheckoutController.h; sourceTree = "<group>"; };
-		FAF5603316CC885D00AA6BE6 /* STPCheckoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STPCheckoutController.m; sourceTree = "<group>"; };
 		FAF5603616CC885D00AA6BE6 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		FAF5603716CC885D00AA6BE6 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		FAF5606116CC885D00AA6BE6 /* STPCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STPCard.h; sourceTree = "<group>"; };
@@ -251,9 +243,6 @@
 			children = (
 				FAF55D0116CC7B6400AA6BE6 /* AppDelegate.h */,
 				FAF55D0216CC7B6400AA6BE6 /* AppDelegate.m */,
-				FAF55D0A16CC7B6400AA6BE6 /* ViewController.h */,
-				FAF55D0B16CC7B6400AA6BE6 /* ViewController.m */,
-				FAF55D1016CC7B6400AA6BE6 /* ViewController.xib */,
 				FAF55CF916CC7B6400AA6BE6 /* Supporting Files */,
 				FAF28CB816CDAA270098EF9D /* PaymentViewController.h */,
 				FAF28CB916CDAA270098EF9D /* PaymentViewController.m */,
@@ -282,8 +271,6 @@
 		FAF5603116CC885D00AA6BE6 /* Checkout */ = {
 			isa = PBXGroup;
 			children = (
-				FAF5603216CC885D00AA6BE6 /* STPCheckoutController.h */,
-				FAF5603316CC885D00AA6BE6 /* STPCheckoutController.m */,
 				FAF5603416CC885D00AA6BE6 /* Vendor */,
 				FAF28CB516CDA31A0098EF9D /* STPCheckoutView.h */,
 				FAF28CB616CDA31A0098EF9D /* STPCheckoutView.m */,
@@ -382,7 +369,6 @@
 				FAF55D0516CC7B6400AA6BE6 /* Default.png in Resources */,
 				FAF55D0716CC7B6400AA6BE6 /* Default@2x.png in Resources */,
 				FAF55D0916CC7B6400AA6BE6 /* Default-568h@2x.png in Resources */,
-				FAF55D1216CC7B6400AA6BE6 /* ViewController.xib in Resources */,
 				FAF28CBC16CDAA270098EF9D /* PaymentViewController.xib in Resources */,
 				FAF28CC116CDAD540098EF9D /* SettingsViewController.xib in Resources */,
 				FADDF3F116D3FC8B003BA76F /* amex.png in Resources */,
@@ -415,8 +401,6 @@
 			files = (
 				FAF55CFF16CC7B6400AA6BE6 /* main.m in Sources */,
 				FAF55D0316CC7B6400AA6BE6 /* AppDelegate.m in Sources */,
-				FAF55D0C16CC7B6400AA6BE6 /* ViewController.m in Sources */,
-				FAF5606A16CC885D00AA6BE6 /* STPCheckoutController.m in Sources */,
 				FAF5606B16CC885D00AA6BE6 /* MBProgressHUD.m in Sources */,
 				FAF5608716CC885D00AA6BE6 /* STPCard.m in Sources */,
 				FAF5608816CC885D00AA6BE6 /* STPToken.m in Sources */,
@@ -447,14 +431,6 @@
 				FAF55CFC16CC7B6400AA6BE6 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FAF55D1016CC7B6400AA6BE6 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FAF55D1116CC7B6400AA6BE6 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
