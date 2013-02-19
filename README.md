@@ -2,59 +2,42 @@
 
 Checkout is a utility library for writing payment forms in iOS apps.
 
-## Installation
+## Example
 
-### Install with CocoaPods
-
-[CocoaPods](http://cocoapods.org/) is a library dependency management tool for Objective-C. To use Checkout with CocoaPods, simply add the following to your Podfile and run pod install:
-
-    pod 'Checkout', :git => 'https://github.com/stripe/checkout-ios.git'
-
-### Install by adding files to project
-
-1. Clone this repository
-1. In the menubar, click on 'File' then 'Add files to "Project"...'
-1. Select the 'Checkout' directory in your cloned Checkout repository
-1. Make sure "Copy items into destination group's folder (if needed)" is checked"
-1. Click "Add"
-
-## Checkout Controller
-
-**1)** Add the `QuartzCore` framework to your application.
-
-**2)** Import the headers into any controllers you want to use Checkout in.
-
-    #import <UIKit/UIKit.h>
-    #import "STPCheckoutController.h"
-
-    @interface ViewController : UIViewController <STPCheckoutDelegate>
-
-Notice we're importing `STPCheckoutController.h` and the class conforms to `STPCheckoutDelegate`.
-
-**3)** Instantiate and navigate to a `STPCheckoutController` instance.
-
-    - (void)changeCard
+    - (void)viewDidLoad
     {
-        STPCheckoutController *checkout = [[STPCheckoutController alloc] initWithKey:@"STRIPE_PUBLISHABLE_KEY"];
-        checkout.delegate = self;
-        checkout.title = @"Checkout";
-        [self presentViewController:checkout animated:YES completion:nil];
+        [super viewDidLoad];
+        
+        // ...
+        
+        self.saveButton.enabled = NO;
+
+        self.checkoutView = [[STPCheckoutView alloc] initWithFrame:CGRectMake(15,20,290,55) andKey:@"STRIPE_PUB_KEY"];
+        self.checkoutView.delegate = self;
+        [self.view addSubview:self.checkoutView];
     }
-
-**4)** Implement `STPCheckoutDelegate` method `checkoutController:hasToken`. This gets passed a `STPCheckoutController` instance, and a `STPToken` instance containing the Stripe token.
-
-    - (void) checkoutController:(STPCheckoutController*)controller hasToken:(STPToken*)token
+    
+    - (void)checkoutView:(STPCheckoutView *)view withCard:(PKCard *)card isValid:(BOOL)valid
+    {
+        self.saveButton.enabled = valid;
+    }
+    
+    - (IBAction)save:(id)sender
+    {
+        [self.checkoutView createToken];
+    }
+    
+    - (void)checkoutView:(STPCheckoutView *)view hasToken:(STPToken *)token
     {
         NSLog(@"Received token %@", token.tokenId);
 
-        [token postToURL:[NSURL URLWithString:@"https://yourapi.com/tokens"] withParams:nil completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-            if (error) {
-                // Check error response
-            }
-
-            // Close Checkout
-            [controller close];
+        [token postToURL:[NSURL URLWithString:@"https://example.com/tokens"]
+              withParams:nil
+       completionHandler:^(NSURLResponse *response,  NSData *data, NSError *error) {
+            // Check error response
         }];
     }
 
-That's all! No further reading is required.
+## Installation & Usage
+
+For full docs see our site: https://stripe.com/docs/mobile/ios
