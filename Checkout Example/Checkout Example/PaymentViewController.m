@@ -11,7 +11,8 @@
 #define STRIPE_PUBLISHABLE_KEY @"pk_test_czwzkTp2tactuLOEOqbMTRzG"
 
 @interface PaymentViewController ()
-
+- (void)hasError:(NSError *)error;
+- (void)hasToken:(STPToken *)token;
 @end
 
 @implementation PaymentViewController
@@ -22,35 +23,39 @@
     
     self.title = @"Add Card";
     
+    // Setup save button
     UIBarButtonItem *saveButton = [[UIBarButtonItem alloc] initWithTitle:@"Save" style:0 target:self action:@selector(save:)];
     saveButton.enabled = NO;
     self.navigationItem.rightBarButtonItem = saveButton;
     
+    // Setup checkout
     self.checkoutView = [[STPCheckoutView alloc] initWithFrame:CGRectMake(15,20,290,55) andKey:STRIPE_PUBLISHABLE_KEY];
     self.checkoutView.delegate = self;
     [self.view addSubview:self.checkoutView];
 }
 
-- (IBAction)save:(id)sender
-{
-    [self.checkoutView createToken];
-}
-
 - (void)checkoutView:(STPCheckoutView *)view withCard:(PKCard *)card isValid:(BOOL)valid
 {
+    // Enable save button if the Checkout is valid
     self.navigationItem.rightBarButtonItem.enabled = valid;
 }
 
-- (void)checkoutView:(STPCheckoutView *)view isPending:(BOOL)pending
+- (IBAction)save:(id)sender
 {
-    if (pending) {
-        [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    } else {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+
+    [self.checkoutView createToken:^(STPToken *token, NSError *error) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
-    }
+        
+        if (error) {
+            [self hasError:error];
+        } else {
+            [self hasToken:token];
+        }
+    }];
 }
 
-- (void)checkoutView:(STPCheckoutView *)view hasError:(NSError *)error
+- (void)hasError:(NSError *)error
 {
     UIAlertView *message = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error")
                                                       message:[error localizedDescription]
@@ -60,23 +65,28 @@
     [message show];
 }
 
-- (void)checkoutView:(STPCheckoutView *)view hasToken:(STPToken *)token
+- (void)hasToken:(STPToken *)token
 {
     NSLog(@"Received token %@", token.tokenId);
     
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    
-    [token postToURL:[NSURL URLWithString:@"https://example.com"]
-          withParams:nil
-   completionHandler:^(NSURLResponse *response,  NSData *data, NSError *error) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"https://example.com"]];
+    request.HTTPMethod = @"POST";
+    NSString *body     = [NSString stringWithFormat:@"stripeToken=%@", token.tokenId];
+    request.HTTPBody   = [body dataUsingEncoding:NSUTF8StringEncoding];
 
-        if (error) {
-            // Check error response
-        }
-     
-        [self.navigationController popViewControllerAnimated:YES];
-    }];
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
+                               [MBProgressHUD hideHUDForView:self.view animated:YES];
+                               
+                               if (error) {
+                                   [self hasError:error];
+                               } else {
+                                   [self.navigationController popViewControllerAnimated:YES];
+                               }
+                           }];
 }
 
 @end

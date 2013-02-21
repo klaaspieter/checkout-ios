@@ -10,13 +10,12 @@
 #import "Stripe.h"
 #import "PKView.h"
 
+typedef void (^STPCheckoutTokenBlock)(STPToken* token, NSError* error);
+
 @class STPCheckoutView;
 
 @protocol STPCheckoutDelegate <NSObject>
 @optional
-- (void) checkoutView:(STPCheckoutView*)view hasToken:(STPToken*)token;
-- (void) checkoutView:(STPCheckoutView*)view hasError:(NSError*)error;
-- (void) checkoutView:(STPCheckoutView*)view isPending:(BOOL)pending;
 - (void) checkoutView:(STPCheckoutView*)view withCard:(PKCard *)card isValid:(BOOL)valid;
 @end
 
@@ -30,6 +29,6 @@
 @property (readonly) BOOL pending;
 @property (setter = setUSAddress:) BOOL usAddress;
 
-- (void) createToken;
+- (void)createToken:(STPCheckoutTokenBlock)block;
 
 @end

@@ -50,40 +50,13 @@
     }
 }
 
-- (void)successHandler:(STPToken *)token
-{
-    if ([self.delegate respondsToSelector:@selector(checkoutView:hasToken:)]) {
-        [self.delegate checkoutView:self hasToken:token];
-    }
-}
-
-- (void)errorHandler:(NSError*)error
-{
-    if ([self.delegate respondsToSelector:@selector(checkoutView:hasError:)]) {
-        [self.delegate checkoutView:self hasError:error];
-    } else {
-        UIAlertView *message = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error")
-                                                          message:[error localizedDescription]
-                                                         delegate:nil
-                                                cancelButtonTitle:NSLocalizedString(@"OK", @"OK")
-                                                otherButtonTitles:nil];
-        [message show];
-    }
-}
-
 - (void)pendingHandler:(BOOL)isPending
 {
     pending = isPending;
     self.userInteractionEnabled = !pending;
-
-    if ([self.delegate respondsToSelector:@selector(checkoutView:isPending:)]) {
-        [self.delegate checkoutView:self isPending:pending];
-    } else {
-        [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:pending];
-    }
 }
 
-- (void)createToken
+- (void)createToken:(STPCheckoutTokenBlock)block
 {
     if ( ![self.paymentView isValid] ) return;
     if ( pending ) return;
@@ -103,10 +76,10 @@
     [Stripe createTokenWithCard:scard
                  publishableKey:self.key success:^(STPToken *token) {
                      [self pendingHandler:NO];
-                     [self successHandler:token];
+                     block(token, nil);
                  } error:^(NSError *error) {
                      [self pendingHandler:NO];
-                     [self errorHandler:error];
+                     block(nil, error);
                  }];
 
 }
