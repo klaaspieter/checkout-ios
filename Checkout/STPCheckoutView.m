@@ -74,12 +74,10 @@
     [self pendingHandler:YES];
     
     [Stripe createTokenWithCard:scard
-                 publishableKey:self.key success:^(STPToken *token) {
+                 publishableKey:self.key
+                     completion:^(STPToken *token, NSError *error) {
                      [self pendingHandler:NO];
-                     block(token, nil);
-                 } error:^(NSError *error) {
-                     [self pendingHandler:NO];
-                     block(nil, error);
+                     block(token, error);
                  }];
 
 }
