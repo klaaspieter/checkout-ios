@@ -11,7 +11,7 @@
 
 @interface PaymentViewController : UIViewController <STPCheckoutDelegate>
 
-@property IBOutlet STPCheckoutView* checkoutView;
+@property STPCheckoutView* checkoutView;
 
 - (IBAction)save:(id)sender;
 
