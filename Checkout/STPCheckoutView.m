@@ -87,6 +87,8 @@
 {
     if ( ![self.paymentView isValid] ) return;
     if ( pending ) return;
+    
+    [self endEditing:YES];
  
     PKCard* card = self.paymentView.card;
     STPCard* scard = [[STPCard alloc] init];

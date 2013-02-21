@@ -250,6 +250,7 @@
 				FAF28CBD16CDAD540098EF9D /* SettingsViewController.h */,
 				FAF28CBE16CDAD540098EF9D /* SettingsViewController.m */,
 				FAF28CBF16CDAD540098EF9D /* SettingsViewController.xib */,
+				FAF5603516CC885D00AA6BE6 /* MBProgressHUD */,
 			);
 			path = "Checkout Example";
 			sourceTree = "<group>";
@@ -283,7 +284,6 @@
 			isa = PBXGroup;
 			children = (
 				FADDF3BD16D3FC8B003BA76F /* PaymentKit */,
-				FAF5603516CC885D00AA6BE6 /* MBProgressHUD */,
 				FAF5606016CC885D00AA6BE6 /* Stripe */,
 			);
 			path = Vendor;

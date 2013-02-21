@@ -2,6 +2,11 @@
 
 Checkout is a utility library for writing payment forms in iOS apps.
 
+## Requirements
+
+* iOS version: >= 4.3
+* Frameworks: QuartzCore.framework
+
 ## API 
 
 ### Instance methods
