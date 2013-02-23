@@ -10,5 +10,6 @@ Pod::Spec.new do |s|
   s.public_header_files = 'Checkout/**/*.h'
   s.resources           = 'Checkout/PaymentKit/Resources'
   s.platform            = :ios
+  s.frameworks          = 'QuartzCore'
   s.requires_arc        = true
 end
